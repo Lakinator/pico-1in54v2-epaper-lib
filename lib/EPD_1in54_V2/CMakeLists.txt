@@ -1,0 +1,2 @@
+add_library(epd_1in54_v2 EPD_1in54_V2.c)
+target_link_libraries(epd_1in54_v2 pico_stdlib hardware_spi)
