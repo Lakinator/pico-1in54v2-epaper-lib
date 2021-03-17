@@ -19,7 +19,7 @@
 #define EPD_PIN_DIN 3  // SPI MOSI
 #define EPD_PIN_CLK 2  // SPI SCK
 #define EPD_PIN_CS 1   // SPI chip select (Low active)
-#define EPD_PIN_DC 6   // Data/Command control pin (High for data, and low for command)
+#define EPD_PIN_DC 15   // Data/Command control pin (High for data, and low for command) 6
 #define EPD_PIN_RST 4  // External reset pin (Low for reset)
 #define EPD_PIN_BUSY 7 // Busy state output pin (Low for busy)
 

@@ -3,8 +3,6 @@
 #include "lib/GUI/GUI_Paint.h"
 #include "lib/EPD_1in54_V2/EPD_1in54_V2.h"
 
-// convert bmp to byte array: https://www.waveshare.com/wiki/File:Image2Lcd.7z
-
 #define PIN_LED 25
 
 void blink(UBYTE amount, UDOUBLE time)
@@ -49,7 +47,8 @@ int main()
 
     Paint_Clear(WHITE);
 
-    Paint_DrawString_EN(10, 5, "Hello World", &Font24, WHITE, BLACK);
+    Paint_DrawString_EN(10, 5, "Hello World", &Font24, BLACK, WHITE);
+    Paint_DrawNum(10, 25, 1337, &Font20, BLACK, WHITE);
 
     EPD_1IN54_V2_Display(ImageBuffer);
 
